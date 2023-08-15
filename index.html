@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Portafolio</title>
+</head>
+
+<body>
+    <div class="encabezado">
+        <h1>Mi Portafolio</h1>
+        <h3>Johan Sebastian Aparicio Muñoz</h3>
+        <h2  style="color:aqua" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Acerca de mi:</h2>
+        <h4>Soy un aprendiz de software con experiencia en desarrollo web,
+            desarrollo móvil y ciencia de datos. Me apasiona crear softwares innovadores
+            y utiles para las personas.</h4>
+    </div>
+
+    <div class="main">
+        <div class="container">
+            <div class="veterinaria">
+                <a href="Veterinaria/index.html">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1496/1496941.png" alt="">
+                    <p class="tetx"> Veterinaria</p>
+                </a>
+            </div>
+            <div class="galeria">
+                <a href="Galeria/Galeria.html">
+                    <img src="https://cdn.icon-icons.com/icons2/3455/PNG/512/picture_file_image_photo_gallery_icon_219497.png"
+                        alt="">
+                    <p>Galeria</p>
+                </a>
+            </div>
+            <div class="calculadora">
+                <a href="Calculadora/calculadora.html">
+                    <img src="https://cdn.icon-icons.com/icons2/317/PNG/512/calculator-icon_34473.png" alt="">
+                    <p>Calculadora</p>
+                </a>
+            </div>
+            <div class="calendario">
+                <a href="Calendario/index.html">
+                    <img src="https://cdn.icon-icons.com/icons2/317/PNG/512/calendar-icon_34471.png" alt="">
+                    <p>Calendario</p>
+                </a>
+            </div>
+            <div class="factura">
+                <a href="Factura/factura.html">
+                    <img src="https://cdn.icon-icons.com/icons2/1093/PNG/512/invoice_78456.png" alt="">
+                    <p>Factura</p>
+                </a>
+            </div>
+            <div class="quiensoy">
+                <a href="Pagina ejercicio/index.html">
+                    <img src="https://cdn.icon-icons.com/icons2/20/PNG/256/business_man_user_support_supportfortheuser_aquestion_theclient_2330.png"
+                        alt="">
+                    <p>Quien Soy</p>
+                </a>
+            </div>
+            <div class="cv">
+                <a href="Pagina Hoja de vida/index.html">
+                    <img src="https://cdn.icon-icons.com/icons2/1485/PNG/512/cv_102350.png" alt="">
+                    <p>Hoja de Vida</p>
+                </a>
+            </div>
+            <div class="perfil">
+                <a href="Pagina perfil/index.html">
+                    <img src="https://cdn.icon-icons.com/icons2/1993/PNG/512/account_avatar_face_man_people_profile_user_icon_123197.png"
+                        alt="">
+                    <p>Perfil</p>
+                </a>
+            </div>
+            <div class="semaforo">
+                <a href="Semaforo.html">
+                    <img src="https://cdn.icon-icons.com/icons2/1541/PNG/512/semaforo_107125.png" alt="">
+                    <p>Semaforo</p>
+                </a>
+            </div>
+            <div class="semaforo-boton">
+                <a href="Semaforoboton.html">
+                    <img src="https://cdn.icon-icons.com/icons2/1286/PNG/512/44_85245.png" alt="">
+                    <p>Semaforo Boton</p>
+                </a>
+            </div>
+
+        </div>
+        <style>
+            body {
+                margin: 0px;
+                padding: 0px;
+                background-color: rgb(75, 75, 75);
+            }
+
+            .encabezado {
+                text-align: center;
+                color: aqua;
+            }
+            
+
+            .main {
+                margin-top: 20px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .container {
+                display: grid;
+                grid-template-columns: repeat(3, 30%);
+                gap: 30px;
+            }
+
+
+            img {
+                max-height: 150px;
+                max-width: 150px;
+            }
+
+            p {
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 20px;
+                color: aqua;
+            }
+
+            .galeria:hover img {
+                filter: brightness(50%);
+                cursor: pointer;
+            }
+
+            .calculadora:hover img {
+                filter: brightness(50%);
+                cursor: pointer;
+            }
+
+            .calendario:hover img {
+                filter: brightness(50%);
+                cursor: pointer;
+            }
+
+            .factura:hover img {
+                filter: brightness(50%);
+                cursor: pointer;
+            }
+
+            .quiensoy:hover img {
+                filter: brightness(50%);
+                cursor: pointer;
+            }
+
+            .cv:hover img {
+                filter: brightness(50%);
+                cursor: pointer;
+            }
+
+            .perfil:hover img {
+                filter: contrast(50%);
+                cursor: pointer;
+            }
+
+            .semaforo:hover img {
+                filter: brightness(50%);
+                cursor: pointer;
+            }
+
+            .semaforo-boton:hover img {
+                filter: brightness(50%);
+                cursor: pointer;
+            }
+
+
+
+            .encabezado h1 {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: 200;
+                font-size: 70px;
+                margin: 10px 0px 30px 0px;
+            }
+
+            .encabezado h3 {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 30px;
+                font-weight: 200;
+                color: white;
+                margin: 10px 0;
+            }
+            
+
+            .encabezado h4 {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 20px;
+                font-weight: 100;
+                color: white;
+                margin: 10px 0;
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(2, 50%);
+                    align-items: center;
+                }
+            }
+            @media (max-width: 500px) {
+                .container {
+                    display: grid;
+                    grid-template-columns: repeat(1, 100%);
+                    align-items: center;
+                }
+            }
+        </style>
+
+</html>

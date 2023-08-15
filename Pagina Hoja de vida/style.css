@@ -1,0 +1,148 @@
+
+body {
+    background-color: bisque;
+    margin: 0%;
+}
+
+.todo {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border-radius: 2%;
+    max-width: 50%;
+    margin: auto;
+}
+
+.todo img {
+    margin-left: 26%;
+    margin-top: 5%;
+    width: 50%;
+    height: 50%;
+}
+
+.todo li {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.todo p {
+    text-align: center;
+}
+
+.todo h3 {
+    margin-bottom: 5%;
+    margin-top: 0%;
+}
+
+.ladoizq {
+    background-color: rgb(74, 74, 74);
+    border-radius: 2%;
+}
+.FA {
+    margin-bottom: 5vh;
+}
+.Cono {
+    margin-bottom: 5vh;
+}
+.info {
+    padding: 10%;
+    color: white;
+    margin-bottom: 15%;
+}
+
+.Cont img {
+    margin-left: 43%;
+    margin-top: 10%;
+    width: 15%;
+    height: 15%;
+}
+
+.Cont p {
+    text-align: center;
+}
+
+.ladoderc h1 {
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.encabezado {
+    margin-bottom: 10%;
+}
+
+.sobremi p{
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.ladoderc h2 {
+    margin-top: 0%;
+    text-align: center;
+
+}
+.ladoderc h3 {
+    margin-top: 4%;
+    margin-left: 4%;
+}
+
+.ladoderc p {
+    margin-left: 5%;
+}
+
+.exp p{
+    margin-bottom: 10%;
+}
+
+.exp li {
+    margin-right: 2%;
+}
+
+.titulo {
+    background-color: gray;
+    margin: 0%;
+    color: white;
+    padding: 1%;
+}
+
+.titulo h3 {
+    margin-left: 5%;
+}
+.regresar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: white;
+    
+    border: none;
+    color: black;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px;
+}
+
+button:hover {
+    background-color: aqua;
+    color: white;
+}
+
+
+@media (max-width: 1000px) {
+    .todo{
+        grid-template-columns: repeat(1, 100%);
+    }
+}
+

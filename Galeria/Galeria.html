@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+</head>
+
+<body>
+    <div class="imagen-container">
+        <img id="imagen-seleccionada">
+    </div>
+    <div class="galeria">
+        <script>
+            var imagenes = [
+                "img/img1.png",
+                "img/img2.png",
+                "img/img3.png",
+                "img/img4.png",
+                "img/img5.png",
+                "img/img6.png",
+                "img/img7.png",
+                "img/img8.jfif",
+                "img/img9.png",
+                "img/img10.jfif",
+                "img/img11.jfif",
+                "img/img12.jfif"
+            ];
+
+            function cambiarImagen(img) {
+                var imagenSeleccionada = document.getElementById("imagen-seleccionada");
+                imagenSeleccionada.src = img.src;
+            }
+
+            for (var i = 0; i < imagenes.length; i++) {
+                var img = document.createElement("img");
+                img.src = imagenes[i];
+                img.onclick = function () {
+                    cambiarImagen(this);
+                };
+                document.querySelector(".galeria").appendChild(img);
+            }
+        </script>
+    </div>
+    <div class="regresar">
+        <a href="../index.html" ><button>Volver</button></a>
+    </div>
+</body>
+
+<style>
+    .galeria {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .galeria img {
+        margin-left: 1%;
+        margin-bottom: 1%;
+        border: 2px solid #ddd;
+        border-radius: 1%;
+        cursor: pointer;
+        border-radius: 4%;
+        border: 2px solid rgb(255, 255, 255);
+        max-width: 15%;
+    }
+
+    .imagen-container {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    #imagen-seleccionada {
+        border-radius: 4%;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .regresar {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    button {
+        background-color: white;
+        
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px;
+    }
+
+    button:hover {
+        background-color: aqua;
+        color: white;
+    }
+
+    @media only screen and (max-width: 1000px) {
+
+        #imagen-seleccionada {
+            height: 100%;
+            width: 100%;
+        }
+
+        .galeria {
+            flex-direction: column;
+            width: 90%;
+            justify-content: center;
+            align-items: center;
+        }
+        .galeria img{
+            max-width: 60%;
+        }
+    }
+</style>
+
+</html>

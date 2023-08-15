@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+</head>
+<body>
+    <div class="p1"></div>
+    <div class="p2">
+        <div class="p01">
+            <div class="p001"> <img class="img1"; src="img/idea (1).png" alt=""; >
+            <h3 id="h31">E S T U D I O S <BR> C R E A T I V O S</h3>
+            </div>
+            <div class="p012"> <h1 >FACTURA</h1> </BR> <H4>FECHA:  12/ENERO/2021</H4> <H4>FACTURA:   003</H4> </div>
+        </div>
+        <div class="p22">
+            <div class="p021"> <h3>Sebastian Muñoz</h3> <p>ADSO <br> 2557356 <br> Calle Flora  123. Ciudad de México </p></div>
+            <div class="p022"> <h3>MÉTODO DE PAGO</h3>  <p>CUENTA: 4916 8418 9082 4339 <br> CORREO: hola@sitioincreible.mx </p> </div>
+        </div>
+        <table>
+            <tr class="pp1">
+                <td>ARTICULO</td>
+                <td>CANT.</td>
+                <td>PRECIO</td>
+                <td>Total</td>
+            </tr>
+            <tr class="pp2">
+                <td>Diseño de volantes</td>
+                <td style="text-align: center;">02</td>
+                <td style="text-align: center;">$570</td>
+                <td style="text-align: center;">$5.700</td>
+            </tr>
+            <tr class="pp3">
+                <td>Diseño de volantes</td>
+                <td style="text-align: center;">02</td>
+                <td style="text-align: center;">$570</td>
+                <td style="text-align: center;">$5.700</td>
+            </tr>
+            <tr class="pp2">
+                <td>Diseño de volantes</td>
+                <td style="text-align: center;">02</td>
+                <td style="text-align: center;">$570</td>
+                <td style="text-align: center;">$5.700</td>
+            </tr>
+            <tr class="pp3">
+                <td>Diseño de volantes</td>
+                <td style="text-align: center;">02</td>
+                <td style="text-align: center;">$570</td>
+                <td style="text-align: center;">$5.700</td>
+            </tr>
+            <tr class="pp2">
+                <td>Diseño de volantes</td>
+                <td style="text-align: center;">02</td>
+                <td style="text-align: center;">$570</td>
+                <td style="text-align: center;">$5.700</td>
+            </tr>
+        </table>
+        <hr id="hr2">
+        <p id="tabletex">Subtotal $33.250 <br> <br> Imp. (16%)    $4,978 <br> <br> TOTAL    $38,228</p>
+        <div class="p23">
+            <div class="p023"><p>¿Alguna pregunta? <br> Envianos un correo a hola@sitioincreible.mx <br>o llamanos al (55) 1234-5678 </p></div>
+            <div class="p024"><h1>¡GRACIAS!  </h1></div>
+        </div>
+        <hr id="hr1">
+        <p id="pu">Avenida libertadores 123 Tehuacan, Puebla . sitioincreible.mx</p>
+    </div>
+    <div class="regresar">
+        <a href="../index.html" ><button>Volver</button></a>
+    </div>
+</body>
+<style>
+    .p1{
+        background-image: url("img/Captura\ de\ pantalla\ 2023-05-17\ 123427.png");
+    }
+    .p012 h1{
+        color: aqua; font-size: 65px;
+    }
+    .p021 h3{
+        color: aqua; margin-bottom: 5px;
+    }
+    .p022 h3{
+        color: aqua; position: relative; left: 30px;
+    }
+    .pp1 {
+        background-color: aqua; margin: 5px; text-align: center;color: white;
+    }
+    .pp2{
+        margin: 5px;
+    }
+    .pp3{
+        background-color: rgb(216, 216, 216); margin: 5px;
+    }
+    #hr2{
+        border: 0;
+        width: 91.8%;
+        margin-left: 5%;
+        height: 5px;
+        background-color: rgb(216, 216, 216);
+    }
+    *{
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    table{
+        border-spacing: 0;
+        margin: 5% 3% 0% 5%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    td{
+        padding: 15px;
+    }
+    #tabletex{
+        margin-top: 2%;
+        text-align: end;
+        position: relative;
+        right: 50px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    #pu{
+        text-align: center;
+        margin: 2% 0%;
+    }
+    #hr1{
+        position: relative;
+        left: 35px;
+        width: 90%;
+        height: 5px;
+        background-color: turquoise;
+        border: 0;
+    }
+    h1{
+        font-size: 70px;
+    }
+    #h31{
+        position: relative;
+        top: 30px;
+        margin: 5px;
+        color: rgb(255, 255, 255);
+
+    }
+    *{
+        margin: 0%;
+    }
+    body{
+        display: grid;
+        grid-template-columns: 5% 95%;
+        margin: 0% 28%;
+        background-color: rgb(255, 255, 255);
+    }
+    .p1{
+        background-color: aqua;
+    }
+    .p2{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 2px 2px 2px black;
+    }
+    .p01{
+       display: flex;
+       justify-content: space-around;
+    }
+    .p22{
+        display: flex;
+        justify-content: space-around;
+        margin: 6% 3%;
+    }
+    .p23{
+        display: flex;
+        justify-content: space-around;
+margin: 10% 4% 2% 4%;
+    }
+    .p001{
+        height: 300px;
+        text-align: center;
+        background-color: aqua;
+        position: relative;
+        left: 40px;
+    }
+
+    .p024{
+        color: aqua;
+    }
+    .p021{
+        position: relative;
+        right: 35px;
+    }
+    .p022{
+        position: relative;
+        top: 22px;
+    }
+    .p012{
+        position: relative;
+        top: 100px;
+        left: 30px;
+        text-align: center;
+    }
+    .img1{
+        position: relative;
+        top: 40px;
+        width: 200px; 
+        height: 200px;
+    }
+    .regresar {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    button {
+        background-color: white;
+        
+        border: none;
+        color: black;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 2px;
+    }
+
+    button:hover {
+        background-color: aqua;
+        color: white;
+    }
+    @media screen and (max-width:1500px) {
+        body{
+            margin: 0% 20%;
+        }
+    }
+     @media screen and (max-width:1050px) {
+        body{
+            margin: 0% 10%;
+        }
+    }
+     @media screen and (max-width:798px) {
+        body{
+            margin: 0% 0%;
+        }
+    }
+     @media screen and (max-width:635px) {
+        .p01{
+            display: grid;
+        }
+        .p001{
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .p012{
+            margin-top: 8%;
+            position: relative;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+        }
+        .p22{
+            margin: 6% 6% 6% 10% ;
+        }
+        .p23{
+            display: grid;
+        }
+        .p023{
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:380px) {
+        body{
+            display: grid;
+            grid-template-columns: 100%;
+            margin: 0%;
+            background-color: white;
+        }
+        .p021{
+            position: relative;
+            left: 3px;
+        }
+        .p022{
+            position: relative;
+            left: 2px;
+        }
+    }
+</style>
+</html>
